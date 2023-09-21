@@ -7,14 +7,14 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./LoginPage.css";
-
+import Logo from "../../assets/LoginImagem/imagemeolicasolar.png"
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState(""); // Mensagem de sucesso
   const navigate = useNavigate();
-const Logo = require("../src/assets/LoginImagem/imagemeolicasolar.png  ")
+
   const handleLoginSuccess = (token) => {
     // Usuário autenticado com sucesso
     // Salve o token no LocalStorage
